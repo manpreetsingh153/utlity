@@ -1,0 +1,302 @@
+.invoice-box {
+
+  margin: auto;
+  padding: 30px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+
+  border: #00112d 1px solid;
+  padding: 10px;
+
+}
+
+@media print {
+  /* All your print styles go here */
+
+  .purchase-order {
+    margin: none;
+    /* margin: 5px !important; */
+    /* height: 500px; */
+    width: 100%;
+  }
+}
+
+.invoice-box table {
+  width: 100%;
+  line-height: inherit;
+  text-align: left;
+}
+
+.invoice-box table td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* 
+  .invoice-box table tr td:nth-child(2){
+    text-align:right; */
+/* } */
+
+.invoice-box table tr.top table td {
+  padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+  font-size: 45px;
+  line-height: 45px;
+  color: #333;
+}
+
+.invoice-box table tr.information table td {
+  padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+  background: #818c95;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  color: white;
+}
+
+.invoice-box table tr.details td {
+  padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td {
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+  border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(2) {
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .invoice-box table tr.top table td {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+
+.invoice-box table tr.information table td {
+  width: 100%;
+  /* display:block;
+        text-align:center; */
+}
+
+
+
+/* part time strat */
+ul {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+
+/* offer template 2 start */
+.box-invoice {
+  max-width: 600px;
+  margin: auto;
+  /* padding:30px; */
+  /* border:5px  4px 10px solid #eee; */
+  /* box-shadow:5px 10px  20px rgba(0, 0, 0, .15); */
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+  /* border:  #17A6D2 solid; */
+  border: #5D8192 1px solid;
+  /* padding: 10px; */
+
+}
+
+.box-invoice table {
+  /* width:300px; */
+  line-height: inherit;
+  text-align: left;
+}
+
+.box-invoicetable td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.box-invoice table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.box-invoice table tr.top table td {
+  padding-bottom: 20px;
+}
+
+.box-invoice table tr.top table td.title {
+  font-size: 45px;
+  line-height: 45px;
+  color: #333;
+}
+
+.box-invoice table tr.information table td {
+  padding-bottom: 40px;
+}
+
+.box-invoice table tr.heading td {
+  background: #818c95;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  color: white;
+}
+
+.box-invoice table tr.details td {
+  padding-bottom: 20px;
+}
+
+.box-invoice table tr.item td {
+  border-bottom: 1px solid #eee;
+}
+
+.box-invoice table tr.item.last td {
+  border-bottom: none;
+}
+
+.box-invoice table tr.total td:nth-child(2) {
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}
+
+.bg-color {
+  background-color: #5D8192;
+  /* border-left:10px solid #0066CC; */
+}
+
+.margin-chnage {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-invoice table tr.top table td {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.box-invoice table tr.information table td {
+  width: 100%;
+  /* display:block;
+        text-align:center; */
+}
+
+/* offer temp 2 end */
+
+
+
+/* offer template 2 start */
+box-invoice-1 {
+  max-width: 600px;
+  margin: auto;
+  /* padding:30px; */
+  /* border:5px  4px 10px solid #eee; */
+  /* box-shadow:5px 10px  20px rgba(0, 0, 0, .15); */
+  font-size: 16px;
+  line-height: 24px;
+  color: #555;
+  /* border:  #17A6D2 solid; */
+  border: #5D8192 1px solid;
+  /* padding: 10px; */
+
+}
+
+.box-invoice table {
+  width: 100%;
+  line-height: inherit;
+  text-align: left;
+}
+
+.box-invoicetable td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.box-invoice table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.box-invoice table tr.top table td {
+  padding-bottom: 20px;
+}
+
+.box-invoice table tr.top table td.title {
+  font-size: 45px;
+  line-height: 45px;
+  color: #333;
+}
+
+.box-invoice table tr.information table td {
+  padding-bottom: 40px;
+}
+
+.box-invoice table tr.heading td {
+  background: #00112d;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  color: white;
+}
+
+.box-invoice table tr.details td {
+  padding-bottom: 20px;
+}
+
+.box-invoice table tr.item td {
+  border-bottom: 1px solid #eee;
+}
+
+.box-invoice table tr.item.last td {
+  border-bottom: none;
+}
+
+.box-invoice table tr.total td:nth-child(2) {
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}
+
+.bg-color {
+  background-color: #5D8192;
+  /* border-left:10px solid #0066CC; */
+}
+
+.margin-chnage {
+  margin-left: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .box-invoice table tr.top table td {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+.box-invoice table tr.information table td {
+  width: 100%;
+  /* display:block;
+        text-align:center; */
+}
+
+.templete-right {
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
+  height:min-content;
+   /* experiment with this value, try changing to 110vh */
+  
+}

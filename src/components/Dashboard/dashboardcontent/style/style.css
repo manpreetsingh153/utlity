@@ -1,0 +1,71 @@
+.dash-data-main .card-text {
+    font-size: 1rem;
+    font-weight: 600;
+    /* letter-spacing: 10px !important; */
+
+}
+
+/* .card-container {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: start !important;
+} */
+.investment-card .small-cont {
+
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    top: 0;
+    justify-content: center;
+    font-weight: 600;
+    /* left: 0; */
+}
+
+.main-position {
+    position: relative;
+}
+
+.spending .card-title .text,
+.username {
+    font-size: small;
+    font-weight: 100;
+}
+
+.image1 {
+    border-radius: 10px;
+    background: #dc354617;
+}
+
+.dropdown-toggle::after {
+    display: none;
+
+}
+
+.option .btn-check:checked+.btn,
+.option .btn.active,
+.option .btn.show,
+.option .btn:first-child:active,
+:not(.btn-check)+.option .btn:active {
+    border-color: transparent;
+}
+
+.chartjs-render-monitor {
+    animation: chartjs-render-animation 1ms;
+}
+
+@keyframes chartjs-render-animation {
+
+    0% {
+        opacity: .99;
+    }
+
+
+    100% {
+        opacity: 1;
+    }
+}
+

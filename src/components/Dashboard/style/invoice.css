@@ -1,0 +1,223 @@
+.invoice-catagory {
+  box-sizing: border-box !important;
+  /* border: 2px solid #ffa822 !important; */
+
+  height: 52px !important;
+  /* background: #ffa822 !important; */
+
+}
+
+
+.invoice-catagory h5 {
+  text-align: start !important;
+  font-size: 200px !important;
+  /* color: red !important; */
+}
+
+.invoice-catagory1 {
+  height: 52px !important;
+  width: 52px !important;
+  /* border: 2px solid #ffa822 !important; */
+  border-radius: 100% 0px 0px 100% !important;
+  /* background: #ffa822 !important; */
+}
+
+.invoice-table tr,
+.total {
+  border-bottom: 2px solid black
+}
+
+.main-invoice-container {
+  /* min-width: 500px ; */
+  /* margin-right: 80px !important; */
+  overflow: visible;
+}
+
+.subdata {
+  font-size: 18px !important;
+}
+
+@media screen and (min-width:421px) and (max-width:768px) {
+  .main-invoice-container h4 {
+    font-size: 83% !important;
+  }
+
+  .subdata {
+    font-size: 80% !important;
+  }
+
+  .invoice-table th {
+    font-size: 90% !important;
+  }
+
+  .subhead {
+    font-size: 90% !important;
+  }
+
+  .invoice-table td h6,
+  td {
+    font-size: 90% !important;
+  }
+}
+
+@media screen and (max-width :420px) {
+  .invoice-table th {
+    font-size: 62% !important;
+  }
+
+  .main-invoice-container h4 {
+    font-size: 66% !important;
+  }
+
+  .subdata {
+    font-size: 44% !important;
+  }
+
+  .subhead {
+    font-size: 59% !important;
+  }
+
+  .invoice-table td h6,
+  td {
+    font-size: 78% !important;
+  }
+}
+
+.border15 {
+  /* border-left: 15px solid #ffa822; */
+  padding-left: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px !important;
+}
+
+.pl-20 {
+  padding-left: 20px !important;
+}
+
+.padd-left {
+  padding-left: 20px;
+}
+
+.main-invoice-container h4 {
+  font-size: 18px;
+
+}
+
+.invoice-catagory {
+  align-items: center;
+  /* font-size: 18px; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.main-invoice-container .cpmname {
+  font-size: 15px;
+}
+
+.invoice-table th {
+  font-size: 18px;
+  font-weight: 700 !important;
+}
+
+.subhead {
+  font-size: 17px;
+}
+
+.invoice-table td h6,
+td {
+  font-size: 1.1rem;
+}
+
+.form-control.border-0.border-3.rounded-0.border-bottom:focus {
+  box-shadow: none;
+  border-color: transparent;
+  /* You can adjust this color to match your design */
+}
+
+.form-control:focus {
+  box-shadow: none;
+
+  border-color: #dee2e6;
+  /* border-color: #dee2e6; */
+
+}
+
+@media screen {
+  div.footerborder {
+    /* display: none; */
+  }
+}
+
+/* @media print {
+  div.class {
+    height: 100vh; */
+/* background-color: red; */
+/* border-bottom: 25px solid yellow !important; */
+/* position: fixed !important;
+    z-index: 2 !important;
+    bottom: 0 !important; */
+/* } */
+/* .footerborder
+  {
+    background-color: red;
+    border: 20px solid red;
+    width: 100vh;
+    z-index: 200;
+    position: fixed;
+    bottom: 0;
+  } */
+/* } */
+.invoice-table tr , .invoice-table th {
+  background: transparent;
+}
+
+.footerborder
+{
+  position: absolute;
+  bottom: 0;
+}
+.headerborder
+{
+  position: absolute;
+  top: 0;
+}
+@media print {
+  div.class .invoiceprint {
+    height: 100%;
+
+    /* padding-top: 100px; */
+    /* background-color: red !important; */
+    z-index: 2 !important;
+  }
+
+  div.class {
+    /* height: 100%; */
+    /* padding-top: 100px;    */
+    /* background-color: red !important; */
+    margin: 5px;
+    z-index: 2 !important;
+  }
+
+  .footerborder {
+    /* width: 100vh; */
+    z-index: 200;
+    position: fixed;
+    bottom: 0;
+  }
+
+.activeimg
+{
+  border: 2px solid blue ;
+}
+
+  .headerborder {
+    /* width: 100vh; */
+    /* margin-bottom: 500px; */
+    z-index: 200;
+    position: fixed;
+    top: 0;
+  }
+}
