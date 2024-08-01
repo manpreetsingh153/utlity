@@ -101,7 +101,7 @@ const Mainpurchase = () => {
     });
 
     // console.log(inputs.timestamp);
-    const data = await axios.post("http://localhost:3000/api/var", {
+    const data = await axios.post("https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/var", {
       body: {
         text: text,
         inputs: inputs,
