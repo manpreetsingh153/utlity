@@ -100,6 +100,7 @@ const Newoffertemp = () => {
     // console.log(inputs.timestamp);
     const data = await axios.post("https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/var", {
       body: {
+        email:session.data.user.email,
         text: text,
         inputs: inputs,
         table1: "offer_letter",
