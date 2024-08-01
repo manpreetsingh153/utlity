@@ -15,7 +15,7 @@ const Dashpage = () => {
   console.log(session)
   const usedata = async () => {
 
-    const response = await axios.post("http://localhost:3000/api/details", {
+    const response = await axios.post("https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/details", {
       body: {
         email: session.data.user.email,
       },
