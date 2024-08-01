@@ -32,7 +32,7 @@ const Account = () => {
     // console.log(value);
     try {
       const getData = async () => {
-        const data = await axios.post("http://localhost:3000/api/details", {
+        const data = await axios.post("https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/details", {
           body: {
             email:session.data.user.email,
             password: value.currentpassword,
