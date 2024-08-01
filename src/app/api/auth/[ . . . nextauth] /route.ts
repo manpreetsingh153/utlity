@@ -9,38 +9,7 @@ const prisma = new PrismaClient();
 
 const handler = NextAuth({
   providers: [
-    CredentialsProvider({
-      name: "Credentials",
-      credentials: {
-        // email: { label: "Email", type: "text" },
-        // password: { label: "Password", type: "password" },
-      },
-      async authorize(credentials: any, req: any) {
-        try {
-          const { email, password } = credentials
 
-          const user = await prisma.user.findUnique({
-            where: {
-              email: email,
-            }
-          })
-          if (!user || !user.password) {
-            throw new Error("not found")
-          }
-          console.log(user)
-          if (user.password === password) {
-            console.log(user.id.toString(), user.email, user.name, user.contact)
-            return { id: user.id.toString(), email: user.email, name: user.name, contact: user.contact };
-          }
-          else
-            throw new Error("password not match")
-        }
-        catch (error) {
-          console.log("error", error)
-          return null;
-        }
-      },
-    }),
     GoogleProvider({
       clientId: process.env.GOOGLE_ID as string,
       clientSecret: process.env.GOOGLE_SECRET as string,
@@ -52,39 +21,6 @@ const handler = NextAuth({
     }),
   ],
   pages: { signIn: "/login" },
-  callbacks: {
-    async signIn({ user, account, profile, email, credentials }) {
-      try {
-        if (account?.provider === "google") {
-
-          const userExist = await prisma.user.findUnique({
-            where: { email: profile?.email },
-          });
-          console.log("signin", { user, account, profile, email, credentials })
-          if (!userExist) {
-            await prisma.user.create({
-              data: {
-                email: profile?.email as string,
-                name: profile?.name as string,
-              },
-            });
-          }
-        }
-        return true;
-      } catch (error) {
-        console.error("Error during sign-in callback:", error);
-        return false;
-      }
-    },
-    async jwt({ token, user, session }) {
-      console.log("jwt", { token, user, session })
-
-      return token
-    }, async session({ session, token, user }) {
-      console.log("session", { token, user, session })
-      return session
-    }
-  },
 
 });
 export { handler as GET, handler as POST };
