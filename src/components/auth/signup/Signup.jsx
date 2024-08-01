@@ -22,7 +22,7 @@ function Signup() {
     // console.log(value);
     try {
       const getData = async () => {
-        const data = await axios.post("http://localhost:3000/api/details/signup", {
+        const data = await axios.post("https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/details/signup", {
           body: {
             email: value.email,
             password: value.password,
