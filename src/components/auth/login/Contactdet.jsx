@@ -21,7 +21,7 @@ const Contactdet = () => {
     try {
       const getData = async () => {
         const data = await axios.post(
-          "http://localhost:3000/api/details/signup",
+          "https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/details/signup",
           {
             body: {
               email: session.data.user.email,
