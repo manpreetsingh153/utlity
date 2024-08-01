@@ -1,0 +1,63 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: "Open Sans", sans-serif !important;  */
+    /* font-family: "Oswald", sans-serif !important;    */
+    font-family: "AvenirNextr" !important;
+    background: red;
+
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: .5px;
+    background: #ffffff;
+}
+
+
+h1 {
+    font-family: "AvenirNextB" !important;
+    font-size: 80px;
+    font-weight: 700 !important;
+
+}
+
+/* .card-title{ font-family: "Oswald", sans-serif;} */
+.bg-pattren {
+    z-index: 0;
+    opacity: .2;
+    bottom: -35px;
+}
+
+.card-txt {
+    z-index: 1;
+}
+
+.searchcontainer button i {
+    display: flex;
+    background-color: transparent !important;
+}
+
+.searchcontainer button {
+    /* height: 30px; */
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent !important;
+    border: 0px !important;
+}
+
+.searchcontainer input {
+    border: 0;
+    border-radius: 25px;
+}
+
+.searchcontainer {
+    border-radius: 25px;
+    border: 1px solid gray;
+    align-items: center;
+    position: relative;
+}
+.footer2
+{
+    height: 100%;
+}
