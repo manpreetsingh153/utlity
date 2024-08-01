@@ -80,7 +80,7 @@ const Account = () => {
   // console.log("session.data?.user.email");
   useEffect(() => {
     const fetchuserdetail = async () => {
-      const resp = await axios.post("http://localhost:3000/api/var", {
+      const resp = await axios.post("https://utlity-manpreets-projects-05f6dc9b.vercel.app/api/var", {
         body: {
           email: session.data?.user.email,
         },
