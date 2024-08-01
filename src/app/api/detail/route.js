@@ -8,7 +8,7 @@ export async function GET() {
 
   try {
       // const user = await prisma.user.findMany({})
-     return NextResponse.json({data: user} , { status: 200 });
+     return NextResponse.json({data: "user"} , { status: 200 });
    
    } catch (error) {
         return NextResponse.json(
